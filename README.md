@@ -14,7 +14,7 @@ A Laboratory Information Management System (LIMS) is software that allows you to
 Modern genomics generates an unprecedented amount of data. Faced with increasing data volumes and sample throughput along with frequent changes in technology, labs must modernize their approach to managing, tracking, and centralizing genomics data.
 
 ### Workflow
-##### Order Creation 
+#### Order Creation 
 Workflows begin once a physician or patient place an order. A **requisition** (RQ)  is created within an internal software system that contains information about the patient and order/tests requested. This generates a work order that is used to track the overall progress of the RQ. 
 ```yaml
 paths:
@@ -45,7 +45,7 @@ paths:
 ```
 
 
-##### Specimen Arrival 
+#### Specimen Arrival 
 **Specimens** are shipped to the lab and must first go through accessioning which handles the intake, labeling and preliminary review of the specimen and requisition. When a specimen is accessioned, the physical specimen is matched to an associated requisition and patient information such as collection date, tube size, specimen type (TODO turn this into a list) is inputted. 
 ```yaml
 paths:
@@ -75,7 +75,7 @@ paths:
           description: OK
 ```
 
-##### Extraction
+#### Extraction
 **Extraction** is a method to purify DNA from a sample by using physical and/or chemical methods. The lab performs this work on samples that have been accessioned. Magnetic seperation is used by binding DNA to magnetic beads. This seperates the DNA from the sample. The **quality** and yield of DNA are assessed by spectrophotometry or by gel electrophoresis.
 
 ```yaml
@@ -105,14 +105,14 @@ paths:
           description: OK
 ```
 
-##### Batching
+#### Batching
 
-##### Library Prep
+#### Library Prep
 
-##### Sequencing 
+#### Sequencing 
 
-##### Reads to Variants
+#### Reads to Variants
 
-##### Confirmation
+#### Confirmation
 
-##### Report 
+#### Report 
